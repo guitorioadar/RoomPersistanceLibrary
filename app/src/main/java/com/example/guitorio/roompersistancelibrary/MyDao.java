@@ -1,6 +1,7 @@
 package com.example.guitorio.roompersistancelibrary;
 
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
@@ -16,7 +17,8 @@ public interface MyDao {
     public void addUser(User user);
 
     @Query("select * from users")
-    public List<User> getUsers();
+    //public LiveData<List<User>> getUsers();
+    List<User> getUsers();
 
     @Update
     public void updateUser(User user);

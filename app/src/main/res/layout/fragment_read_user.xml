@@ -2,17 +2,39 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ReadUserFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/tvDisplay"
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Sadman"
-        android:layout_margin="12dp"
-        android:textStyle="bold"
-        android:textSize="18sp"/>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:text="Sadman"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewUserList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvDisplay">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+
+
 
 </ScrollView>

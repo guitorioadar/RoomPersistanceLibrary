@@ -3,6 +3,8 @@ package com.example.guitorio.roompersistancelibrary;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +17,8 @@ import android.widget.Button;
 public class HomeFragment extends Fragment implements View.OnClickListener{
 
     private Button btnAddUser,btnViewUser,btnUpdateUser,btnDeleteUser;
+
+    private RecyclerView recyclerView;
 
 
     public HomeFragment() {
@@ -32,6 +36,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         btnViewUser = view.findViewById(R.id.btnVIewUser);
         btnUpdateUser = view.findViewById(R.id.btnUpdateUser);
         btnDeleteUser = view.findViewById(R.id.btnDeleteUser);
+
 
         btnAddUser.setOnClickListener(this);
         btnViewUser.setOnClickListener(this);

@@ -1,7 +1,6 @@
 package com.example.guitorio.roompersistancelibrary;
 
 import android.arch.persistence.room.Room;
-import android.arch.persistence.room.RoomDatabase;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static FragmentManager fragmentManager;
 
-    public static MyAppDatabse myAppDatabse;
+    public static MyAppDatabase myAppDatabse;
 
 
     @Override
@@ -21,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
 
-        myAppDatabse = Room.databaseBuilder(getApplicationContext(),MyAppDatabse.class,"user_db").allowMainThreadQueries().build();
-        //myAppDatabse = Room.databaseBuilder(getApplicationContext(),MyAppDatabse.class,"user_db").build();
+        myAppDatabse = Room.databaseBuilder(getApplicationContext(),MyAppDatabase.class,"user_db").allowMainThreadQueries().build();
+        //myAppDatabse = Room.databaseBuilder(getApplicationContext(),MyAppDatabase.class,"user_db").build();
         Log.d("Database", "onCreate: Database Created...");
 
         if(findViewById(R.id.fragmentContainer) != null){
