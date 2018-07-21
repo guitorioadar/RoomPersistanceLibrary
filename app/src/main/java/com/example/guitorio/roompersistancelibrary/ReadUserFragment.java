@@ -54,7 +54,6 @@ public class ReadUserFragment extends Fragment {
         }
         tvDisplay.setText(info);
 
-
         return view;
     }
 
