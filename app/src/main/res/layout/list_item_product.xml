@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:text="Product Name "
+                android:textSize="16sp"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:hint="BASIN MIXER 101 WTC"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:text="Product Id "
+                android:textSize="16sp"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/tvProductId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:hint="000068-PRO-01"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:textColor="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:text="Product Code "
+                android:textSize="16sp"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/tvProductCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:hint="WT-601"
+                android:textSize="16sp"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:text="Product Cetegory Sub ID "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvProductCategorySubId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:hint="000001-PCS-01"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:text="Product Price "
+                android:textSize="16sp"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:hint="13230"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
 
-        myAppDatabse = Room.databaseBuilder(getApplicationContext(),MyAppDatabase.class,"user_db").allowMainThreadQueries().build();
+        myAppDatabse = Room.databaseBuilder(getApplicationContext(),MyAppDatabase.class,"user_db").build();
         //myAppDatabse = Room.databaseBuilder(getApplicationContext(),MyAppDatabase.class,"user_db").build();
         Log.d("Database", "onCreate: Database Created...");
 
